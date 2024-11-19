@@ -1,0 +1,73 @@
+/* General footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .certificates img {
+    max-width: 100px;
+    margin-top: 10px;
+  }
+  
+  /* Footer menu */
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-menu a:hover {
+    color: #00bfff;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .certificates img {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

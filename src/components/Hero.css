@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    background-image: url('../assets/images/c3.jpg'); /* Asegúrate de que la imagen esté en esta ruta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
+    min-height: 300px;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Oscurece la imagen con un overlay */
+    z-index: 1;
+  }
+  
+  .hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
